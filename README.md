@@ -25,6 +25,6 @@ Sokoban game made in JavaFX
 
 ## Installation
 
-* Clone the repository and open it with IntellJ IDEA, set JDK and JRE, run **"MainMenu"** configuration
+* Clone the repository and open it with **IntellJ IDEA**, set **JDK** and **JRE**, run **"MainMenu"** configuration
 
 
