@@ -1,9 +1,9 @@
-package res.Objects;
+package res.objects;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import res.Scenar.Main;
-import res.Static.Values;
+import res.scenar.Main;
+import res.constants.Values;
 
 public class Crate extends ImageView {
     public int x;
@@ -32,7 +32,7 @@ public class Crate extends ImageView {
     }
 
     public void getCrateImage(){
-        Image image = new Image(getClass().getResourceAsStream("/res/Assets/crate.png"));
+        Image image = new Image(getClass().getResourceAsStream("/res/assets/crate.png"));
         this.setImage(image);
     }
 
@@ -44,7 +44,7 @@ public class Crate extends ImageView {
     }
 
     public void manageArrows () {
-        Image image = new Image(getClass().getResourceAsStream("/res/Assets/arrow.png"));
+        Image image = new Image(getClass().getResourceAsStream("/res/assets/arrow.png"));
 
         double arrowWidth, arrowHeight;
         arrowWidth = Values.tileWidth/3;

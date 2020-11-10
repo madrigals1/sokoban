@@ -1,10 +1,7 @@
-package res.Windows;
+package res.windows;
 
 import javafx.application.Application;
 import javafx.application.Platform;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.ObjectProperty;
-import javafx.collections.ObservableMap;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
@@ -13,14 +10,11 @@ import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import res.Scenar.Main;
-import res.Static.Values;
+import res.constants.Values;
 
 public class SettingsMenu extends Application {
     Stage primaryStageSaved;
@@ -55,7 +49,7 @@ public class SettingsMenu extends Application {
     }
 
     void createElements() {
-        scene.getStylesheets().add("/res/CSS/main.css");
+        scene.getStylesheets().add("/res/css/main.css");
 
         mainWidth = 400;
         mainHeight = 400;

@@ -1,4 +1,4 @@
-package res.Windows;
+package res.windows;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -14,8 +14,8 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import res.Scenar.Main;
-import res.Static.Values;
+import res.scenar.Main;
+import res.constants.Values;
 
 public class LevelPickMenu extends Application {
     Stage primaryStageSaved;
@@ -50,7 +50,7 @@ public class LevelPickMenu extends Application {
     }
 
     void createElements() {
-        scene.getStylesheets().add("/res/CSS/main.css");
+        scene.getStylesheets().add("/res/css/main.css");
 
         gridWidth = 400;
         gridHeight = 300;

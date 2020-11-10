@@ -1,8 +1,8 @@
-package res.Objects;
+package res.objects;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import res.Static.Values;
+import res.constants.Values;
 
 public class Bomb extends ImageView {
     public int x = 0;
@@ -21,7 +21,7 @@ public class Bomb extends ImageView {
     }
 
     public void getBombImage(){
-        Image image = new Image(getClass().getResourceAsStream("/res/Assets/bomb.png"));
+        Image image = new Image(getClass().getResourceAsStream("/res/assets/bomb.png"));
         this.setImage(image);
     }
 

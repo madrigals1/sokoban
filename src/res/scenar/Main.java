@@ -1,4 +1,4 @@
-package res.Scenar;
+package res.scenar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,11 +14,11 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
-import res.Objects.Bomb;
-import res.Objects.Crate;
-import res.Objects.Player;
-import res.Static.Values;
-import res.Windows.MainMenu;
+import res.objects.Bomb;
+import res.objects.Crate;
+import res.objects.Player;
+import res.constants.Values;
+import res.windows.MainMenu;
 
 public class Main extends Application {
 
@@ -92,7 +92,7 @@ public class Main extends Application {
         player = new Player(2,2);
         images = new ImageView[10][10];
 
-        Image imgnull = new Image(getClass().getResourceAsStream("/res/Assets/null.png"));
+        Image imgnull = new Image(getClass().getResourceAsStream("/res/assets/null.png"));
 
         for(int i = 0; i < 10; i++){
             for(int j = 0; j < 10; j++){
@@ -163,7 +163,7 @@ public class Main extends Application {
 
     // Getting background image (Grass)
     public void getGrassImage(){
-        Image image = new Image(getClass().getResourceAsStream("/res/Assets/grass.png"));
+        Image image = new Image(getClass().getResourceAsStream("/res/assets/grass.png"));
         ImageView imageView = new ImageView(image);
 
         imageView.setX(0);
@@ -214,7 +214,7 @@ public class Main extends Application {
                     continue;
                 }
 
-                Image image = new Image(getClass().getResourceAsStream("/res/Assets/" + tileNames[tiles[i][j]]));
+                Image image = new Image(getClass().getResourceAsStream("/res/assets/" + tileNames[tiles[i][j]]));
 
                 images[i][j].setImage(image);
 

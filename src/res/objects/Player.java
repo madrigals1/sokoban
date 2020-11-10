@@ -1,9 +1,9 @@
-package res.Objects;
+package res.objects;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import res.Scenar.Main;
-import res.Static.Values;
+import res.scenar.Main;
+import res.constants.Values;
 
 public class Player extends ImageView {
     public int x = 0;
@@ -36,7 +36,7 @@ public class Player extends ImageView {
     }
 
     public void getPlayerImage(){
-        Image image = new Image(getClass().getResourceAsStream("/res/Assets/player.png"));
+        Image image = new Image(getClass().getResourceAsStream("/res/assets/player.png"));
         this.setImage(image);
     }
 

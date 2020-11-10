@@ -1,4 +1,4 @@
-package res.Windows;
+package res.windows;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -10,8 +10,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-import res.Scenar.LevelCreate;
-import res.Static.Values;
+import res.scenar.LevelCreate;
+import res.constants.Values;
 
 public class MainMenu extends Application {
     Stage primaryStageSaved;
@@ -68,7 +68,7 @@ public class MainMenu extends Application {
         setListeners();
 
         root.getChildren().add(vbox);
-        scene.getStylesheets().add("/res/CSS/main.css");
+        scene.getStylesheets().add("/res/css/main.css");
     }
 
     void setListeners(){

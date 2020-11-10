@@ -1,7 +1,7 @@
-package res.Static;
+package res.constants;
 
 import javafx.application.Platform;
-import res.Scenar.LevelCreate;
+import res.scenar.LevelCreate;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -1,4 +1,4 @@
-package res.Scenar;
+package res.scenar;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -13,9 +13,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import res.Static.Values;
-import res.Windows.LevelPickMenu;
-import res.Windows.MainMenu;
+import res.constants.Values;
+import res.windows.LevelPickMenu;
+import res.windows.MainMenu;
 
 import java.io.*;
 
@@ -107,7 +107,7 @@ public class LevelCreate extends Application {
     }
 
     public void createElements () {
-        scene.getStylesheets().add("/res/CSS/second.css");
+        scene.getStylesheets().add("/res/css/second.css");
 
         tilesPane.setLayoutX(0);
         tilesPane.setLayoutY(0);
@@ -136,7 +136,7 @@ public class LevelCreate extends Application {
         tileset.setAlignment(Pos.CENTER);
 
         {
-            Image image = new Image(getClass().getResourceAsStream("/res/Assets/grass.png"));
+            Image image = new Image(getClass().getResourceAsStream("/res/assets/grass.png"));
             ImageView iv = new ImageView(image);
 
             iv.setLayoutX(0);
@@ -214,7 +214,7 @@ public class LevelCreate extends Application {
         }
 
         {
-           Image image = new Image(getClass().getResourceAsStream("/res/Assets/null.png"));
+           Image image = new Image(getClass().getResourceAsStream("/res/assets/null.png"));
            thisTile = new ImageView(image);
 
            thisTile.setLayoutX(50);
@@ -242,11 +242,11 @@ public class LevelCreate extends Application {
             ImageView iv;
 
             if(tileNames[i] == "cratebomb") {
-                image = new Image(getClass().getResourceAsStream("/res/Assets/crate.png"));
+                image = new Image(getClass().getResourceAsStream("/res/assets/crate.png"));
                 iv = new ImageView(image);
                 iv.setEffect(new Glow(0.8));
             } else {
-                image = new Image(getClass().getResourceAsStream("/res/Assets/" + tileNames[i]));
+                image = new Image(getClass().getResourceAsStream("/res/assets/" + tileNames[i]));
                 iv = new ImageView(image);
             }
 
