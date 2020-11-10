@@ -112,12 +112,10 @@ public class LevelPickMenu extends Application {
                     levels[i][j].setVisible(false);
                 }
 
-                levels[i][j].setOnAction(new EventHandler<ActionEvent>() {
-                    @Override public void handle(ActionEvent e) {
-                        Main main = new Main();
-                        main.level = index;
-                        main.start(primaryStageSaved);
-                    }
+                levels[i][j].setOnAction(e -> {
+                    Main main = new Main();
+                    main.level = index;
+                    main.start(primaryStageSaved);
                 });
 
                 levelGrid.getChildren().add(levels[i][j]);
@@ -127,27 +125,21 @@ public class LevelPickMenu extends Application {
     }
 
     void setListeners(){
-        prev.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
-                startingPoint -= 15;
-                if(startingPoint < 0) startingPoint = 0;
-                resetButtons();
-            }
+        prev.setOnAction(e -> {
+            startingPoint -= 15;
+            if(startingPoint < 0) startingPoint = 0;
+            resetButtons();
         });
-        next.setOnAction(new EventHandler<ActionEvent>() {
-            @Override public void handle(ActionEvent e) {
-                startingPoint += 15;
-                if(startingPoint >= Values.levels.size()) startingPoint -= 15;
-                resetButtons();
-            }
+        next.setOnAction(e -> {
+            startingPoint += 15;
+            if(startingPoint >= Values.levels.size()) startingPoint -= 15;
+            resetButtons();
         });
-        scene.addEventFilter(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
-            public void handle(KeyEvent ke) {
-                if (ke.getCode() == KeyCode.ESCAPE) {
-                    MainMenu main = new MainMenu();
-                    main.start(primaryStageSaved);
-                    ke.consume();
-                }
+        scene.addEventFilter(KeyEvent.KEY_PRESSED, ke -> {
+            if (ke.getCode() == KeyCode.ESCAPE) {
+                MainMenu main = new MainMenu();
+                main.start(primaryStageSaved);
+                ke.consume();
             }
         });
     }
