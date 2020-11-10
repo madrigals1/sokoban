@@ -6,7 +6,7 @@ Sokoban game clone made in JavaFX
 
 Make sure you have installed these:
 
-- [Java](https://www.java.com/en/download/) - is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.
+- [Java 8](https://www.java.com/en/download/) - is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.
 You should install both **JDK** and **JRE**.
 - [JavaFX](https://gluonhq.com/products/javafx/) - OpenJFX is an open source, next generation client application platform for desktop, mobile and embedded systems built on Java.
 
