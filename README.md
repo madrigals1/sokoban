@@ -29,6 +29,12 @@ You should install both **JDK** and **JRE**.
 ![Add Level](https://i.imgur.com/4UJyvbh.png "Add Level")
 
 
+## Controls
+
+- **W, A, S, D** - movement
+- **Escape** - go back to Main Menu
+- **R** - restart
+
 ## Installation
 
 Following instruction only works for **IntelliJ IDEA**
