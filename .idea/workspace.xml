@@ -1,14 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="Sokoban:jar" />
-    </artifacts-to-build>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde36c18-2093-492f-9d69-fe006a173512" name="Default Changelist" comment="">
+    <list default="true" id="2c869158-2db7-409c-84c0-be1b30d52604" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Sokoban_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/addlevel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/level.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/levels.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/mainmenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sokoban.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Sokoban.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sokoban.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Sokoban_jar/Sokoban.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Assets/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Assets/bomb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Assets/brick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Assets/crate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Assets/grass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Assets/null.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Assets/player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Assets/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/CSS/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/CSS/second.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Objects/Bomb.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Objects/Crate.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Objects/Player.class" beforeDir="false" />
@@ -35,253 +73,46 @@
       <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Windows/SettingsMenu$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Windows/SettingsMenu$3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Sokoban/res/Windows/SettingsMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sokoban.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sokoban.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>main</find>
-      <find>scene</find>
-      <find>images</find>
-      <find>c</find>
-      <find>crates</find>
-      <find>glow</find>
-      <find>rerun</find>
-      <find>system.out</find>
-      <find>Levels</find>
-      <find>system</find>
-      <find>playerLa</find>
-      <find>arrow</find>
-      <find>64</find>
-      <find>60</find>
-      <find>setpreser</find>
-      <find>listen</find>
-      <find>border</find>
-      <find>APP</find>
-      <find>mkd</find>
-      <find>tileset</find>
-      <find>set</find>
-      <find>app</find>
-      <find>catch</find>
-      <find>load</find>
-      <find>geta</find>
-      <find>getall</find>
-      <find>level</find>
-      <find>loadall</find>
-      <find>levelloaded</find>
-      <find>400</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1UIteADQrdn4AqhCORxXO6jt3WU" />
+  <component name="ProjectId" id="1k6HlxDokWuAGqSsp6DIVWY1cCo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="sokoban" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536505890296" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="experimental" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\IdeaProjects\Sokoban\src\res\Static" />
-      <recent name="C:\Users\user\Documents\Sokoban\src\res\Assets" />
-      <recent name="C:\Users\user\Documents\Sokoban\src\Assets" />
-      <recent name="C:\Users\user\Documents\Sokoban\src\com\company" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Documents\Sokoban\src\main\resources" />
-      <recent name="C:\Users\user\Documents\Sokoban\src\Assets" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.MainMenu">
-    <configuration name="LevelCreate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="res.Scenar.LevelCreate" />
-      <module name="Sokoban" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="res.Static.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LevelCreate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LevelCreate" />
-      <module name="Sokoban" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LevelPickMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="res.Windows.LevelPickMenu" />
-      <module name="Sokoban" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="res.Windows.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="res.Scenar.Main" />
-      <module name="Sokoban" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="res.Static.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jre1.8.0_231" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="res.Windows.MainMenu" />
-      <module name="Sokoban" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="res.Windows.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Sokoban" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SettingsMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="res.Windows.SettingsMenu" />
-      <module name="Sokoban" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="res.Windows.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.LevelCreate" />
-      <item itemvalue="Application.LevelPickMenu" />
-      <item itemvalue="Application.MainMenu" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.SettingsMenu" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MainMenu" />
-        <item itemvalue="Application.SettingsMenu" />
-        <item itemvalue="Application.LevelPickMenu" />
-        <item itemvalue="Application.LevelCreate" />
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dde36c18-2093-492f-9d69-fe006a173512" name="Default Changelist" comment="" />
-      <created>1534742245991</created>
+      <changelist id="2c869158-2db7-409c-84c0-be1b30d52604" name="Default Changelist" comment="" />
+      <created>1605014278207</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1534742245991</updated>
+      <updated>1605014278207</updated>
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575056785307">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575056785307" />
-    <state x="808" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575056665333">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="808" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575056665333" />
-    <state x="740" y="260" key="FileChooserDialogImpl" timestamp="1575056895725">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575056895725" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1575056907403">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575056907403" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575056035381">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575056035381" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1575056800175">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575056800175" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
