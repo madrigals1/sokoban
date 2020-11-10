@@ -49,8 +49,8 @@ public class MainMenu extends Application {
         vbox.setPrefWidth(400);
         vbox.setPrefHeight(400);
 
-        vbox.setLayoutX((Values.sceneWidth - 400) / 2);
-        vbox.setLayoutY((Values.sceneHeight - 400) / 2);
+        vbox.setLayoutX(Math.floor(((double) Values.sceneWidth - 400) / 2));
+        vbox.setLayoutY(Math.floor(((double) Values.sceneHeight - 400) / 2));
         vbox.setSpacing(5);
 
         buttons[0] = new Button("New game");

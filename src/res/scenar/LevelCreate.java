@@ -198,14 +198,12 @@ public class LevelCreate extends Application {
                 buttons[i][j].setPrefWidth(Values.tileWidth);
                 buttons[i][j].setPrefHeight(Values.tileHeight);
 
-                int tempi = i;
-                int tempj = j;
+                int temp_i = i;
+                int temp_j = j;
 
                 buttons[i][j].setOnAction(new EventHandler<ActionEvent>() {
                     @Override public void handle(ActionEvent e) {
-                        int locali = tempi;
-                        int localj = tempj;
-                        setTile(locali,localj);
+                        setTile(temp_i, temp_j);
                     }
                 });
 
@@ -241,7 +239,7 @@ public class LevelCreate extends Application {
             Image image;
             ImageView iv;
 
-            if(tileNames[i] == "cratebomb") {
+            if(tileNames[i].equals("cratebomb")) {
                 image = new Image(getClass().getResourceAsStream("/res/assets/crate.png"));
                 iv = new ImageView(image);
                 iv.setEffect(new Glow(0.8));
@@ -262,14 +260,11 @@ public class LevelCreate extends Application {
             iv.setFitWidth(52);
             iv.setFitHeight(52);
 
-            //iv.setPreserveRatio(true);
-
             int tempi = i;
 
             buttonTiles[i].setOnAction(new EventHandler<ActionEvent>() {
                 @Override public void handle(ActionEvent e) {
-                    int locali = tempi;
-                    changePickedTile(locali);
+                    changePickedTile(tempi);
                 }
             });
 
@@ -369,8 +364,7 @@ public class LevelCreate extends Application {
         System.out.println(crateAmount);
         System.out.println(playerAmount);
 
-        if(bombAmount != 0 && bombAmount == crateAmount && playerAmount == 1) return true;
-        else return false;
+        return bombAmount != 0 && bombAmount == crateAmount && playerAmount == 1;
     }
 
     static void print(String s){

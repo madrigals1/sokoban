@@ -209,7 +209,6 @@ public class Values {
         String sLevel = "";
 
         if (!file.exists()) {
-            // System.out.println(path + " does not exist.");
             try {
                 file.getParentFile().mkdirs();
                 file.createNewFile();
@@ -220,7 +219,6 @@ public class Values {
             }
         }
         if (!(file.isFile() && file.canRead())) {
-            // System.out.println(file.getName() + " cannot be read from.");
             return;
         }
 
@@ -248,14 +246,13 @@ public class Values {
             }
         } catch (IOException e){
             e.printStackTrace();
-            //Platform.exit();
         }
 
-        for(int i = 0; i < levelList.size(); i++){
+        for (String s : levelList) {
             int[][] tiles = new int[10][10];
 
-            String[] items = levelList.get(i).split(",");
-            for(int j = 0; j < items.length; j++){
+            String[] items = s.split(",");
+            for (int j = 0; j < items.length; j++) {
                 int k = j / 10;
                 int l = j % 10;
                 tiles[k][l] = Integer.parseInt(items[j]);

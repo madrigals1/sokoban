@@ -36,19 +36,12 @@ public class Crate extends ImageView {
         this.setImage(image);
     }
 
-    public void printDir(){
-        System.out.println("up = "+ this.up);
-        System.out.println("down = "+ this.down);
-        System.out.println("left = "+ this.left);
-        System.out.println("right = "+ this.right);
-    }
-
     public void manageArrows () {
         Image image = new Image(getClass().getResourceAsStream("/res/assets/arrow.png"));
 
         double arrowWidth, arrowHeight;
-        arrowWidth = Values.tileWidth/3;
-        arrowHeight = Values.tileHeight/3;
+        arrowWidth = Math.floor((double) Values.tileWidth / 3);
+        arrowHeight = Math.floor((double) Values.tileHeight / 3);
 
         for(int i = 0; i < 4; i++){
             arrow[i] = new ImageView(image);
@@ -62,8 +55,8 @@ public class Crate extends ImageView {
         arrow[1].setX(this.getX() - arrowWidth/2);
         arrow[1].setY(this.getY() + arrowHeight);
         arrow[2].setX(this.getX() + arrowWidth);
-        arrow[2].setY(this.getY() + Values.tileHeight/2 + arrowHeight);
-        arrow[3].setX(this.getX() + Values.tileWidth/2 + arrowWidth);
+        arrow[2].setY(this.getY() + Math.floor((double) Values.tileHeight / 2) + arrowHeight);
+        arrow[3].setX(this.getX() + Math.floor((double) Values.tileWidth / 2) + arrowWidth);
         arrow[3].setY(this.getY() + arrowHeight);
 
         arrow[0].setRotate(270);
@@ -73,29 +66,10 @@ public class Crate extends ImageView {
     }
 
     public void setArrows () {
-        if(this.up){
-            arrow[0].setVisible(true);
-        } else {
-            arrow[0].setVisible(false);
-        }
-
-        if(this.left){
-            arrow[1].setVisible(true);
-        } else {
-            arrow[1].setVisible(false);
-        }
-
-        if(this.down){
-            arrow[2].setVisible(true);
-        } else {
-            arrow[2].setVisible(false);
-        }
-
-        if(this.right){
-            arrow[3].setVisible(true);
-        } else {
-            arrow[3].setVisible(false);
-        }
+        arrow[0].setVisible(this.up);
+        arrow[1].setVisible(this.left);
+        arrow[2].setVisible(this.down);
+        arrow[3].setVisible(this.right);
     }
 
     public void moveArrows(int i) {
@@ -123,48 +97,32 @@ public class Crate extends ImageView {
 
     public void checkDirections () {
         if(x > 0){
-            if(Main.tiles[x - 1][y] == 0 ||
-               Main.tiles[x - 1][y] == 3 ||
-               Main.tiles[x - 1][y] == 5){
-                this.up = true;
-            } else {
-                this.up = false;
-            }
+            this.up = Main.tiles[x - 1][y] == 0 ||
+                    Main.tiles[x - 1][y] == 3 ||
+                    Main.tiles[x - 1][y] == 5;
         } else {
             this.up = false;
         }
         if(x < 9){
-            if(Main.tiles[x + 1][y] == 0 ||
-               Main.tiles[x + 1][y] == 3 ||
-               Main.tiles[x + 1][y] == 5){
-                this.down = true;
-            } else {
-                this.down = false;
-            }
+            this.down = Main.tiles[x + 1][y] == 0 ||
+                    Main.tiles[x + 1][y] == 3 ||
+                    Main.tiles[x + 1][y] == 5;
         } else {
             this.down = false;
         }
 
         if(y > 0){
-            if(Main.tiles[x][y - 1] == 0 ||
-               Main.tiles[x][y - 1] == 3 ||
-               Main.tiles[x][y - 1] == 5){
-                this.left = true;
-            } else {
-                this.left = false;
-            }
+            this.left = Main.tiles[x][y - 1] == 0 ||
+                    Main.tiles[x][y - 1] == 3 ||
+                    Main.tiles[x][y - 1] == 5;
         } else {
             this.left = false;
         }
 
         if(y < 9){
-            if(Main.tiles[x][y + 1] == 0 ||
-               Main.tiles[x][y + 1] == 3 ||
-               Main.tiles[x][y + 1] == 5) {
-                this.right = true;
-            } else {
-                this.right = false;
-            }
+            this.right = Main.tiles[x][y + 1] == 0 ||
+                    Main.tiles[x][y + 1] == 3 ||
+                    Main.tiles[x][y + 1] == 5;
         } else {
             this.right = false;
         }

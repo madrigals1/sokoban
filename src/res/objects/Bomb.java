@@ -24,12 +24,4 @@ public class Bomb extends ImageView {
         Image image = new Image(getClass().getResourceAsStream("/res/assets/bomb.png"));
         this.setImage(image);
     }
-
-    public void close(){
-        closed = true;
-    }
-
-    public void open(){
-        closed = false;
-    }
 }

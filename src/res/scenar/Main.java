@@ -32,7 +32,7 @@ public class Main extends Application {
     // Image places 10x10
     ImageView[][] images;
 
-    // Crates and bombs hoders
+    // Crates and bombs holders
     public static List<Crate> crates;
     List<Bomb> bombs;
 
@@ -92,11 +92,11 @@ public class Main extends Application {
         player = new Player(2,2);
         images = new ImageView[10][10];
 
-        Image imgnull = new Image(getClass().getResourceAsStream("/res/assets/null.png"));
+        Image img_null = new Image(getClass().getResourceAsStream("/res/assets/null.png"));
 
         for(int i = 0; i < 10; i++){
             for(int j = 0; j < 10; j++){
-                images[i][j] = new ImageView(imgnull);
+                images[i][j] = new ImageView(img_null);
 
                 images[i][j].setFitHeight(Values.tileHeight);
                 images[i][j].setFitWidth(Values.tileWidth);
@@ -144,9 +144,7 @@ public class Main extends Application {
     int[][] copyLevel(int[][] lvlins){
         int[][] lvlcopy = new int[10][10];
         for(int i = 0; i < 10; i++){
-            for(int j = 0; j < 10; j++){
-                lvlcopy[i][j] = lvlins[i][j];
-            }
+            System.arraycopy(lvlins[i], 0, lvlcopy[i], 0, 10);
         }
         return lvlcopy;
     }
@@ -228,9 +226,9 @@ public class Main extends Application {
     // Getting crate by position (for Crate script)
     public static Crate getCrateAt(int x, int y) {
 
-        for(int i = 0; i < crates.size(); i++){
-            if(crates.get(i).x == x && crates.get(i).y == y){
-                return(crates.get(i));
+        for (Crate crate : crates) {
+            if (crate.x == x && crate.y == y) {
+                return crate;
             }
         }
 
@@ -298,11 +296,11 @@ public class Main extends Application {
 
     // Getting image of each tile object
     void getImages(){
-        for(int i = 0; i < bombs.size(); i++){
-            bombs.get(i).getBombImage();
+        for (Bomb bomb : bombs) {
+            bomb.getBombImage();
         }
-        for(int i = 0; i < crates.size(); i++){
-            crates.get(i).getCrateImage();
+        for (Crate crate : crates) {
+            crate.getCrateImage();
         }
         player.getPlayerImage();
     }
@@ -341,8 +339,8 @@ public class Main extends Application {
 
     // Check all crate movement directions
     public static void checkAllCrateDirections(){
-        for(int i = 0; i < crates.size(); i++){
-            crates.get(i).checkDirections();
+        for (Crate crate : crates) {
+            crate.checkDirections();
         }
     }
 }

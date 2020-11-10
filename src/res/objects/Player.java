@@ -23,8 +23,6 @@ public class Player extends ImageView {
 
         this.setFitHeight(Values.tileHeight);
         this.setFitWidth(Values.tileWidth);
-
-        //this.setPreserveRatio(true);
     }
 
     public void setPosition(int x, int y){
@@ -42,58 +40,35 @@ public class Player extends ImageView {
 
     public void checkDirections () {
         if(x > 0){
-            if(Main.tiles[x - 1][y] == 0 ||
-               Main.tiles[x - 1][y] == 3 ||
-               Main.tiles[x - 1][y] == 4){
-                this.up = true;
-            } else {
-                this.up = false;
-            }
+            this.up = Main.tiles[x - 1][y] == 0 ||
+                    Main.tiles[x - 1][y] == 3 ||
+                    Main.tiles[x - 1][y] == 4;
         } else {
             this.up = false;
         }
         if(x < 9){
-            if(Main.tiles[x + 1][y] == 0 ||
-               Main.tiles[x + 1][y] == 3 ||
-               Main.tiles[x + 1][y] == 4){
-                this.down = true;
-            } else {
-                this.down = false;
-            }
+            this.down = Main.tiles[x + 1][y] == 0 ||
+                    Main.tiles[x + 1][y] == 3 ||
+                    Main.tiles[x + 1][y] == 4;
         } else {
             this.down = false;
         }
 
         if(y > 0){
-            if(Main.tiles[x][y - 1] == 0 ||
-               Main.tiles[x][y - 1] == 3 ||
-               Main.tiles[x][y - 1] == 4){
-                this.left = true;
-            } else {
-                this.left = false;
-            }
+            this.left = Main.tiles[x][y - 1] == 0 ||
+                    Main.tiles[x][y - 1] == 3 ||
+                    Main.tiles[x][y - 1] == 4;
         } else {
             this.left = false;
         }
 
         if(y < 9){
-            if(Main.tiles[x][y + 1] == 0 ||
-               Main.tiles[x][y + 1] == 3 ||
-               Main.tiles[x][y + 1] == 4) {
-                this.right = true;
-            } else {
-                this.right = false;
-            }
+            this.right = Main.tiles[x][y + 1] == 0 ||
+                    Main.tiles[x][y + 1] == 3 ||
+                    Main.tiles[x][y + 1] == 4;
         } else {
             this.right = false;
         }
-    }
-
-    public void printDir(){
-        System.out.println("up = "+ this.up);
-        System.out.println("down = "+ this.down);
-        System.out.println("left = "+ this.left);
-        System.out.println("right = "+ this.right);
     }
 
     public void moveUp () {
@@ -101,17 +76,18 @@ public class Player extends ImageView {
         this.x--;
         if(Main.tiles[this.x][this.y] == 4){
             Crate temp = Main.getCrateAt(this.x, this.y);
-            if(temp.up) {
-                temp.moveUp();
-            } else {
-                this.x++;
+            if (temp != null) {
+                if(temp.up) {
+                    temp.moveUp();
+                } else {
+                    this.x++;
+                }
             }
         }
         Main.tiles[this.x][this.y] = 5;
         this.setY(this.x * Values.tileHeight);
 
         this.checkDirections();
-        // printDir();
     }
 
     public void moveDown () {
@@ -119,17 +95,18 @@ public class Player extends ImageView {
         this.x++;
         if(Main.tiles[this.x][this.y] == 4){
             Crate temp = Main.getCrateAt(this.x, this.y);
-            if(temp.down) {
-                temp.moveDown();
-            } else {
-                this.x--;
+            if (temp != null) {
+                if (temp.down) {
+                    temp.moveDown();
+                } else {
+                    this.x--;
+                }
             }
         }
         Main.tiles[this.x][this.y] = 5;
         this.setY(this.x * Values.tileHeight);
 
         this.checkDirections();
-        // printDir();
     }
 
     public void moveLeft () {
@@ -137,17 +114,18 @@ public class Player extends ImageView {
         this.y--;
         if(Main.tiles[this.x][this.y] == 4){
             Crate temp = Main.getCrateAt(this.x, this.y);
-            if(temp.left) {
-                temp.moveLeft();
-            } else {
-                this.y++;
+            if (temp != null) {
+                if (temp.left) {
+                    temp.moveLeft();
+                } else {
+                    this.y++;
+                }
             }
         }
         Main.tiles[this.x][this.y] = 5;
         this.setX(this.y * Values.tileWidth);
 
         this.checkDirections();
-        // printDir();
     }
 
     public void moveRight () {
@@ -155,16 +133,17 @@ public class Player extends ImageView {
         this.y++;
         if(Main.tiles[this.x][this.y] == 4){
             Crate temp = Main.getCrateAt(this.x, this.y);
-            if(temp.right) {
-                temp.moveRight();
-            } else {
-                this.y--;
+            if (temp != null) {
+                if(temp.right) {
+                    temp.moveRight();
+                } else {
+                    this.y--;
+                }
             }
         }
         Main.tiles[this.x][this.y] = 5;
         this.setX(this.y * Values.tileWidth);
 
         this.checkDirections();
-        // printDir();
     }
 }

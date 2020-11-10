@@ -121,7 +121,7 @@ public class LevelPickMenu extends Application {
                 });
 
                 levelGrid.getChildren().add(levels[i][j]);
-                levelGrid.setConstraints(levels[i][j], j, i);
+                GridPane.setConstraints(levels[i][j], j, i);
             }
         }
     }
