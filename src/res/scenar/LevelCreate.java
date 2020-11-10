@@ -201,11 +201,7 @@ public class LevelCreate extends Application {
                 int temp_i = i;
                 int temp_j = j;
 
-                buttons[i][j].setOnAction(new EventHandler<ActionEvent>() {
-                    @Override public void handle(ActionEvent e) {
-                        setTile(temp_i, temp_j);
-                    }
-                });
+                buttons[i][j].setOnAction(e -> setTile(temp_i, temp_j));
 
                 tilesPane.getChildren().add(buttons[i][j]);
             }
@@ -255,18 +251,12 @@ public class LevelCreate extends Application {
             buttonTiles[i].setPrefHeight(52);
             buttonTiles[i].setPrefWidth(52);
 
-            System.out.println(buttonTiles[i].getPrefHeight());
-
             iv.setFitWidth(52);
             iv.setFitHeight(52);
 
             int tempi = i;
 
-            buttonTiles[i].setOnAction(new EventHandler<ActionEvent>() {
-                @Override public void handle(ActionEvent e) {
-                    changePickedTile(tempi);
-                }
-            });
+            buttonTiles[i].setOnAction(e -> changePickedTile(tempi));
 
             tileset.getChildren().add(buttonTiles[i]);
         }
@@ -297,32 +287,20 @@ public class LevelCreate extends Application {
     }
 
     void setListeners(){
-        save.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("Saving");
-                Values.addLevel(tiles);
-                saveLevel();
-                int x = (Values.levels.size() - 1) / 15;
-                LevelPickMenu menu = new LevelPickMenu();
-                menu.startingPoint = x * 15;
-                menu.start(primaryStageSaved);
-            }
+        save.setOnAction(event -> {
+            Values.addLevel(tiles);
+            saveLevel();
+            int x = (Values.levels.size() - 1) / 15;
+            LevelPickMenu menu = new LevelPickMenu();
+            menu.startingPoint = x * 15;
+            menu.start(primaryStageSaved);
         });
 
-        reset.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                clearLevel();
-            }
-        });
+        reset.setOnAction(event -> clearLevel());
 
-        back.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                MainMenu menu = new MainMenu();
-                menu.start(primaryStageSaved);
-            }
+        back.setOnAction(event -> {
+            MainMenu menu = new MainMenu();
+            menu.start(primaryStageSaved);
         });
     }
 
@@ -359,10 +337,6 @@ public class LevelCreate extends Application {
                 if(tiles[i][j] == 5) playerAmount++;
             }
         }
-
-        System.out.println(bombAmount);
-        System.out.println(crateAmount);
-        System.out.println(playerAmount);
 
         return bombAmount != 0 && bombAmount == crateAmount && playerAmount == 1;
     }
